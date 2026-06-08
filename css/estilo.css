@@ -1,0 +1,151 @@
+@charset "utf-8"; /* Define que o arquivo usa acentos e caracteres especiais */
+
+body {
+	width: 100%; /* Ocupa toda a largura da tela */
+	margin: 0; /* Sem espaço nas bordas */
+	background: #F5F0E8; /* Cor de fundo creme */
+	text-align: center; /* Todo texto centralizado */
+}
+
+header {
+	margin: 0 auto; /* Centraliza na tela */
+	text-align: center; /* Texto centralizado */
+	width: 100%; /* Ocupa ..% da largura */
+	background: #1A7A6E; /* Cor de fundo verde */
+	padding: 20px; /* Espaço interno de 20px */
+	color: white; /* Texto branco */
+}
+
+#logo { /* # significa que é um id */
+	width: 160px; /* Largura da imagem do logo */
+	margin-bottom: 10px; /* Espaço abaixo da imagem */
+}
+
+h1 {
+	font-family: Georgia, serif; /* Fonte Georgia */
+	font-size: 30px; /* Tamanho da letra */
+	color: white; /* Cor branca */
+	margin: 8px 0 4px 0; /* Espaço: cima direita baixo esquerda */
+}
+
+header p { /* Parágrafo dentro do header */
+	font-family: Georgia, serif; /* Fonte Georgia */
+	font-size: 16px; /* Tamanho menor */
+	color: #d4ede9; /* Verde claro */
+	margin: 0; /* Sem espaço */
+}
+
+.grupoBotao { /* . significa que é uma classe */
+	margin: 16px auto; /* Espaço e centralizado */
+	text-align: center; /* Centralizado */
+}
+
+.botao {
+	margin: 5px; /* Espaço externo */
+	padding: 8px 20px; /* Espaço interno vertical e horizontal */
+	background: #1A7A6E; /* Fundo verde */
+	border-radius: 8px; /* Bordas arredondadas */
+	text-align: center; /* Texto centralizado */
+	font-family: Cambria, "Times New Roman", serif; /* Fonte */
+	font-size: 18px; /* Tamanho da letra */
+	cursor: pointer; /* Cursor vira mãozinha ao passar */
+	letter-spacing: 2px; /* Espaço entre letras */
+	color: white; /* Texto branco */
+	border: 2px solid white; /* Sem borda, para por borda poe ex:border: 2px solid white; */
+}
+
+.botao:hover { /* Estilo quando passa o mouse no botão */
+	background: #135f55; /* Verde mais escuro */
+}
+
+.carrossel {
+	margin: 0 auto; /* Centraliza na tela */
+	text-align: center; /* Centralizado */
+	width: 40%; /* Largura de 40% da tela */
+	height: 400px; /* Altura fixa */
+	overflow: hidden; /* Esconde o que passar do tamanho */
+	border-radius: 12px; /* Bordas arredondadas */
+}
+
+#moldura { /* A imagem do carrossel */
+	width: 100%; /* Preenche toda a largura do carrossel */
+	height: 100%; /* Preenche toda a altura do carrossel */
+	object-fit: contain; /* Mostra a foto inteira sem cortar */
+	border-radius: 12px; /* Bordas arredondadas */
+	display: block; /* Remove espaço extra abaixo da imagem */
+}
+
+.menu {
+	text-align: center; /* Centralizado */
+	padding: 10px; /* Espaço interno */
+}
+
+.menu a { /* Links do menu */
+	margin: 0 15px; /* Espaço entre os links */
+	color: #1A7A6E; /* Cor verde */
+	font-size: 18px; /* Tamanho da letra */
+	text-decoration: none; /* Remove o sublinhado */
+}
+
+* { /* Aplica para tudo na página */
+	font-family: Arial, sans-serif; /* Fonte Arial em todo o site */
+}
+
+section p { /* Parágrafos dentro das seções */
+	text-align: justify; /* Texto justificado */
+	max-width: 700px; /* Largura máxima */
+	margin: 10px auto; /* Centralizado com espaço */
+}
+
+section h2 {
+	text-align: center; /* Títulos centralizados */
+}
+
+.menu a:hover { /* Quando passa o mouse no link do menu */
+	text-decoration: underline; /* Aparece sublinhado */
+}
+
+section {
+	text-align: center; /* Conteúdo das seções centralizado */
+}
+
+footer {
+	text-align: center; /* Centralizado */
+	width: 100%; /*Largura da faixa fundo*/
+	background: #1A7A6E; /* Fundo verde igual ao header */
+	color: white; /* Texto branco */
+	padding: 20px; /* Espaço interno */
+	margin-top: 30px; /* Espaço acima do footer */
+}
+
+footer p {
+	margin: 5px auto; /* Espaço entre os parágrafos do footer */
+	color: white; /* Texto branco */
+}
+
+@media (max-width: 600px) { /* Quando a tela for menor que 600px (celular) */
+
+    header {
+        width: 100%; /* Ocupa toda a largura */
+    }
+
+    .menu a {
+        margin: 0 8px; /* Menos espaço entre os links */
+        font-size: 15px; /* Letra menor */
+    }
+
+    .carrossel {
+        width: 90%; /* Carrossel maior no celular */
+        height: 300px; /* Altura menor */
+    }
+
+    footer {
+        width: 100%; /* Ocupa toda a largura */
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    section p {
+        max-width: 90%; /* Texto ocupa mais largura */
+    }
+}
