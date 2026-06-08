@@ -148,4 +148,9 @@ footer p {
     section p {
         max-width: 90%; /* Texto ocupa mais largura */
     }
+	
+	#contato p {
+   	 text-align: center;
+}
+
 }
