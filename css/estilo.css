@@ -146,9 +146,14 @@ footer p {
     }
 
     footer {
-        width: 100%; /* Ocupa toda a largura */
-        margin-left: 0;
-        margin-right: 0;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    background: #1A7A6E;
+    color: white;
+    padding: 20px;
     }
 
     section p {
